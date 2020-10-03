@@ -2,7 +2,7 @@ with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 
-procedure Hello is
+procedure Count_Vowel_Consonants is
    Letter : Character;
    Input : Unbounded_String;
    Vowels : constant String := "aAeEiIoOuUyY";
@@ -32,4 +32,4 @@ begin
       Put("Consonants: "); Put(Consonant_Count, 0); Put_Line("");
       Put("Vowels: "); Put(Consonant_Count, 0); Put_Line("");
    end loop;
-end Hello;
+end Count_Vowel_Consonants;
