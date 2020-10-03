@@ -5,7 +5,7 @@ with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 procedure Count_Vowel_Consonants is
    Letter : Character;
    Input : Unbounded_String;
-   Vowels : constant String := "aAeEiIoOuUyY";
+   Vowels : constant String := "aAeEiIoOuU";
    Match : Boolean := False;
    Vowels_Count : Natural := 0;
    Consonant_Count : Natural := 0;
@@ -30,6 +30,6 @@ begin
 	 end if;
       end loop;
       Put("Consonants: "); Put(Consonant_Count, 0); Put_Line("");
-      Put("Vowels: "); Put(Consonant_Count, 0); Put_Line("");
+      Put("Vowels: "); Put(Vowels_Count, 0); Put_Line("");
    end loop;
 end Count_Vowel_Consonants;
