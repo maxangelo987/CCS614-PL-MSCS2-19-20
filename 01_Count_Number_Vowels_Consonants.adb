@@ -10,8 +10,8 @@ procedure Count_Vowel_Consonants is
    Vowels_Count : Natural := 0;
    Consonant_Count : Natural := 0;
 begin
+    Put("Enter: ");
    loop
-      Put("Enter: ");
       Input := To_Unbounded_String(Get_Line);
       for J in 1 .. Length(Input) loop
 	 Letter := Element(Input, J);
