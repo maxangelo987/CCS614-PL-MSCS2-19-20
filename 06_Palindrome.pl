@@ -8,11 +8,12 @@ $r=$n%10;
 $s=($s*10)+$r;
 $n=int($n/10);
 }
+print " ".$t;
 if($t==$s)
 {
-print"Number is palindrome\n";
+print"  is palindrome\n";
 }
 else
 {
-print"Number is not palindrome\n";
+print"  is not palindrome\n";
 }
