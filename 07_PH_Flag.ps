@@ -1,0 +1,59 @@
+/bluebox {
+newpath
+0 0 moveto
+0 400 lineto
+1300 setlinewidth
+0 0 1 setrgbcolor
+stroke
+} def
+
+/redbox {
+newpath
+0 0 moveto
+0 200 lineto
+1300 setlinewidth
+1 0 0 setrgbcolor
+stroke
+}def
+
+/whitebox {
+newpath
+0 0 moveto
+0 200 rlineto
+280 0 rlineto
+-280 -200 rlineto
+1 setlinewidth
+0 0 0 setrgbcolor
+1 1 1 setrgbcolor fill
+stroke
+
+newpath
+0 200 moveto
+0 200 rlineto
+280 -200 rlineto
+280 0 rlineto
+1 setlinewidth
+1 1 1 setrgbcolor fill
+stroke
+
+13 360 10 0 360 arc closepath
+1 1 0 setrgbcolor fill
+stroke
+
+13 40 10 0 360 arc closepath
+1 1 0 setrgbcolor fill
+stroke
+
+240 200 10 0 360 arc closepath
+1 1 0 setrgbcolor fill
+stroke
+
+120 200 50 0 360 arc closepath
+1 1 0 setrgbcolor fill
+stroke
+showpage
+}def
+
+bluebox
+redbox
+whitebox
