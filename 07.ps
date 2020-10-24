@@ -1,10 +1,20 @@
-/sdist width 20 sub numstar 1 add div def
+/box
+{ 72 0 rlineto
+0 72 rlineto
+-72 0 rlineto
+closepath } def
 
-   10 sdist add height 2 div translate % move to first
-   numstar {
-     star
-     sdist 0 translate
-   } repeat
-   
-   starRGB setcolor
-   fill
+/max {
+ /num1 exch def
+ /num2 exch def
+ 
+num1 num2 gt
+
+{box 1 0 0 setrgbcolor fill}
+{box 0 1 0 setrgbcolor fill} if else
+} def
+
+newpath
+400 400 moveto
+30 20 max
+showpage
