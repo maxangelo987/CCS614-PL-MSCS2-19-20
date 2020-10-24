@@ -1,16 +1,10 @@
-newpath
-  0 100 moveto
-  0 216 rlineto
-  288 0 rlineto
-  -288 -216 rlineto
-  10 setlinewidth
- stroke
- newpath
-  400 400 moveto
-  400 500 lineto
-  500 500 lineto
-  500 400 lineto
-  500 400 lineto
-  400 400 lineto
- stroke
- showpage
+/sdist width 20 sub numstar 1 add div def
+
+   10 sdist add height 2 div translate % move to first
+   numstar {
+     star
+     sdist 0 translate
+   } repeat
+   
+   starRGB setcolor
+   fill
