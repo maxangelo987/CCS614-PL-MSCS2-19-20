@@ -18,5 +18,5 @@ begin y := 1;
       while x >= 1 do
          begin write('i'); x := x - 1 end;
       writeln; y := 2 * y
-   until y > 5000
+   until y > 2048
 end.
