@@ -1,0 +1,58 @@
+     IDENTIFICATION DIVISION.
+        PROGRAM-ID. CLTEST4.
+
+       DATA DIVISION.
+        WORKING-STORAGE SECTION.
+          01 TMP. 
+           05 STR1 PIC X(6) VALUE 'ABC3AFF'.
+
+       PROCEDURE DIVISION.
+        DISP.
+           IF STR1(1:1) IS ALPHABETIC
+           DISPLAY STR1(1:1) " IS ALPHABETIC  "
+           ELSE IF STR1(1:1) IS NUMERIC
+           DISPLAY STR1(1:1) " IS NUMERIC "
+           ELSE 
+           DISPLAY STR1(1:1) " IS ALPHANUMERIC " 
+           END-IF.
+           
+           IF STR1(2:1) IS ALPHABETIC
+           DISPLAY STR1(2:1) " IS ALPHABETIC  "
+           ELSE IF STR1(2:1) IS NUMERIC
+           DISPLAY STR1(2:1) " IS NUMERIC "
+           ELSE 
+           DISPLAY STR1(2:1) " IS ALPHANUMERIC " 
+           END-IF.
+            
+           IF STR1(3:1) IS ALPHABETIC
+           DISPLAY STR1(3:1) " IS ALPHABETIC  "
+           ELSE IF STR1(3:1) IS NUMERIC
+           DISPLAY STR1(3:1) " IS NUMERIC "
+           ELSE 
+           DISPLAY STR1(3:1) " IS ALPHANUMERIC " 
+           END-IF.
+        
+           IF STR1(4:1) IS ALPHABETIC
+           DISPLAY STR1(4:1) " IS ALPHABETIC  "
+           ELSE IF STR1(4:1) IS NUMERIC
+           DISPLAY STR1(4:1) " IS NUMERIC "
+           ELSE 
+           DISPLAY STR1(4:1) " IS ALPHANUMERIC " 
+           END-IF.
+           
+           IF STR1(5:1) IS ALPHABETIC
+           DISPLAY STR1(5:1) " IS ALPHABETIC  "
+           ELSE IF STR1(5:1) IS NUMERIC
+           DISPLAY STR1(5:1) " IS NUMERIC "
+           ELSE 
+           DISPLAY STR1(5:1) " IS ALPHANUMERIC " 
+           END-IF.
+            
+           IF STR1(6:1) IS ALPHABETIC
+           DISPLAY STR1(6:1) " IS ALPHABETIC  "
+           ELSE IF STR1(6:1) IS NUMERIC
+           DISPLAY STR1(6:1) " IS NUMERIC "
+           ELSE 
+           DISPLAY STR1(6:1) " IS ALPHANUMERIC " 
+           END-IF.
+        STOP RUN.
