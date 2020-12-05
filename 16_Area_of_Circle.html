@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+ h2 { color: blue ; font-family: courier; }
+ input { width: 6em; }
+ #entry-result { width: 500px; text-align: center; margin: 0 auto; }
+</style>
+</head>
+<body>
+
+<div id="entry-result">
+ <h2> Area of the Circle </h2>
+ Radius: <input type="text" value="0" id="radius">
+ <button onClick ="circleArea()">Find Area of Circle</button>
+ Results: <input type="text" value="0" id="results">
+</div>
+
+<script>
+function circleArea(){
+  var radius = Number(document.getElementById('radius').value);
+  var areaCircle = Math.PI * radius * radius;
+  document.getElementById('results').value = areaCircle.toFixed(3);
+}
+</script>
+
+</body>
+</html> 
