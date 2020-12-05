@@ -1,0 +1,3 @@
+	(('BE') . FIRST ('DS' | 'D' | 'AD' | 'ARDS' | 'ARD') . LAST) 
+	(('RO') . FIRST ('TS' | 'OT' | 'OSTS' | 'OTS' | 'OST') . LAST) 
+END
